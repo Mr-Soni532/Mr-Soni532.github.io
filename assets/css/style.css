@@ -148,7 +148,7 @@
     width: 70%;
     margin: auto;
     /* height: 200vh; */
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 /*! -------------|Home section|----------- */
@@ -413,4 +413,10 @@ z-index: 100;
 }
 .project_btn>a:hover{
     color: var(--first-color);
+}
+
+/*! -------------|Skills section|----------- */
+#skills>.section_title::after{
+    width: 50%;
+    flex: 0.48
 }
