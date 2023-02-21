@@ -16,18 +16,24 @@
     --body-font: 'Poppins', sans-serif;
     ;
 
-    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
-    --big-font-size: 2rem;
-    --h1-font-size: 1.5rem;
+    /* 1.5rem = 24px, 1.25rem = 20px, 1.125rem = 18px, 0.75rem = 12px ... */
+    --ultra-big-font: 5rem;
+    --ultra-medium-font: 3.75rem;
+    --large-font: 1.5rem;
+    --medium-font: 1.25rem;
+    --small-font: 1.125rem;
+    --smaller-font: 0.75rem;
+
+    /* --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
+    --smaller-font-size: .75rem; */
 
     /*========== Font weight ==========*/
-    --font-medium: 500;
-    --font-semi-bold: 600;
+    /* --font-medium: 500;
+    --font-semi-bold: 600; */
 
     /*========== Margenes Bottom ==========*/
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
@@ -81,7 +87,6 @@ body {
 }
 
 h1, h2, h3, h4 {
-    /* color: var(--title-color); */
     font-weight: var(--font-semi-bold);
     margin: 0;
     padding: 0;
@@ -89,10 +94,6 @@ h1, h2, h3, h4 {
 
 a {
     text-decoration: none;
-}
-
-a:hover {
-    /* transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1); */
     transition: ease-in-out 0.25s;
 }
 
@@ -101,7 +102,6 @@ img {
     height: auto;
 }
 
-/* 1260,  */
 /*!==================== REUSABLE CSS CLASSES ====================*/
 .section {
     padding: 2rem 0 4rem;
