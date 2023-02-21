@@ -6,9 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhupender | Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/ff75adb155.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<style>
+
+</style>
 
 <body>
     <!--! Navigation Section -->
@@ -137,16 +142,37 @@
 
         </section>
 
-        <!-- Project Section -->
+        <!--!================= Project Section =================------->
         <section id="projects" class="projects section">
+
             <!-- section heading -->
             <div class="section_title">
                 04. <span>My Projects</span>
             </div>
-            <!-- project card -->
+            <!--! -------------- Gator project card -------------- -->
             <div class="project-card">
+                <!-- ------ project Image -------- -->
                 <div class="project-card_img_section">
-                    <img src="./assets/img/gator/home.png" alt="">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                        data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/img/gator/home.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/gator/nav.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/gator/product.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/gator/acount.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/gator/cart.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="project-card_description_section">
                     <h4>Clone Project</h4>
@@ -165,7 +191,7 @@
                         <span>VS CODE</span>
                     </div>
                     <div class="project_btn">
-                        <a href="#" class="project-github-link"><svg xmlns="http://www.w3.org/2000/svg" role="img"
+                        <a href="https://github.com/Mr-Soni532/berserk-camera-3158" class="project-github-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img"
                                 viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                 class="feather feather-github">
@@ -175,14 +201,204 @@
                                 </path>
                             </svg>
                         </a>
-                        <a href="" class="project-deployed-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+                        <a href="https://gator-ecom.netlify.app/" class="project-deployed-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-external-link">
                                 <title>External Link</title>
                                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                 <polyline points="15 3 21 3 21 9"></polyline>
                                 <line x1="10" y1="14" x2="21" y2="3"></line>
                             </svg>
                         </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--! -------------- Digital Basket project card (Flip)-------------- -->
+            <div class="project-card" id="project-card-flip">
+                <div class="project-card_description_section" id="project-flip-description">
+                    <h4>Clone Project</h4>
+                    <h2 class="project-title">Digital Basket</h2>
+                    <div class="project-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae a vel deserunt minus
+                            exercitationem veritatis ullam, excepturi qui magnam pariatur?</p>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>Bootstrap</span>
+                        <span>Mock API</span>
+                        <span>VS CODE</span>
+                    </div>
+                    <div class="project_btn">
+                        <a href="https://github.com/SumitUjjwal/obnoxious-ladybug-6279" class="project-github-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img"
+                                viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-github">
+                                <title>GitHub</title>
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://legendary-fairy-bc0edb.netlify.app/" class="project-deployed-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-external-link">
+                                <title>External Link</title>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card_img_section" id="project-flip-img">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                        data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/img/digital_basket/home.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/digital_basket/product.png" class="d-block w-100"
+                                    alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/digital_basket/top-deals.png" class="d-block w-100"
+                                    alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/digital_basket/cart.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--! -------------- Roberto project card -------------- -->
+            <div class="project-card">
+                <!-- ------ project Image -------- -->
+                <div class="project-card_img_section">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                        data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/img/roberto/home.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/roberto/about.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/roberto/rooms.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/roberto/news.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/roberto/contact.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card_description_section">
+                    <h4>Clone Project</h4>
+                    <h2 class="project-title">Roberto</h2>
+                    <div class="project-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae a vel deserunt minus
+                            exercitationem veritatis ullam, excepturi qui magnam pariatur?</p>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>VS CODE</span>
+                    </div>
+                    <div class="project_btn">
+                        <a href="https://github.com/Mr-Soni532/Hotel-Roberto" class="project-github-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img"
+                                viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-github">
+                                <title>GitHub</title>
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://hotel-roberto.netlify.app/html/" class="project-deployed-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-external-link">
+                                <title>External Link</title>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--! -------------- mysecretnotes project card (Flip)-------------- -->
+            <div class="project-card" id="project-card-flip">
+                <div class="project-card_description_section" id="project-flip-description">
+                    <h4>Personal Project</h4>
+                    <h2 class="project-title">MySecretNotes</h2>
+                    <div class="project-description">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae a vel deserunt minus
+                            exercitationem veritatis ullam, excepturi qui magnam pariatur?</p>
+                    </div>
+                    <div class="project-tech-stack">
+                        <span>React</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>MUI</span>
+                        <span>React-router</span>
+                        <span>VS CODE</span>
+                    </div>
+                    <div class="project_btn">
+                        <a href="https://github.com/Mr-Soni532/My-Secret-Notes" class="project-github-link" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" role="img"
+                                viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-github">
+                                <title>GitHub</title>
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/Mr-Soni532/My-Secret-Notes" class="project-deployed-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="feather feather-external-link">
+                                <title>External Link</title>
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card_img_section" id="project-flip-img"> 
+                    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                        data-bs-interval="3000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/img/mysecretnote/notes.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/mysecretnote/login.png" class="d-block w-100"
+                                    alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/mysecretnote/signup.png" class="d-block w-100"
+                                    alt="Gator Home">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/img/mysecretnote/add_note.png" class="d-block w-100" alt="Gator Home">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -193,7 +409,9 @@
 
         </section>
     </section>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
