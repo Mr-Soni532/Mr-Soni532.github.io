@@ -8,17 +8,18 @@
     --first-color-alt: hsl(166, 100%, 40%);
     --text: #8892b0;
     --text-light: #a8b2d1;
-    --text-lighter: #ccd6f6; 
+    --text-lighter: #ccd6f6;
     /*--body-color: hsl(var(--hue-color), 60%, 99%);*/
     --body-color: #091428;
 
     /*========== Font and typography ==========*/
-    --body-font: 'Poppins', sans-serif;;
+    --body-font: 'Poppins', sans-serif;
+    ;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --big-font-size: 2rem;
     --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem; 
+    --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
@@ -89,7 +90,8 @@ h1, h2, h3, h4 {
 a {
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     /* transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1); */
     transition: ease-in-out 0.25s;
 }
@@ -98,16 +100,35 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 /* 1260,  */
 /*!==================== REUSABLE CSS CLASSES ====================*/
 .section {
     padding: 2rem 0 4rem;
 }
 
-.section__title {
-    font-size: var(--h1-font-size);
-    /* mine */
-    margin-bottom: 5rem;
+.section_title {
+    font-size: var(--h3-font-size);
+    font-weight: 500;
+    color: var(--first-color);
+    display: flex;
+    align-items: center;
+    margin: 10px 0 40px;
+}
+
+.section_title>span {
+    font-size: var(--h2-font-size);
+    color: var(--text-lighter);
+    margin-left: 10px;
+}
+
+.section_title::after {
+    content: "";
+    /* display: block; */
+    flex-grow: 1;
+    height: 0.1px;
+    margin-left: 30px;
+    background-color: var(--text);
 }
 
 .section__subtitle {
@@ -141,25 +162,21 @@ img {
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--body-color);
-    
+
 }
 
 
 /*!==================== MEDIA QUERY ====================*/
 
 /* For small devices */
-@media screen and (max-width: 568px) {
-  
-}
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 568px) {}
 
-}
+@media screen and (max-width: 350px) {}
 
 /* For medium devices */
-@media screen and (min-width: 568px){
-}
+@media screen and (min-width: 568px) {}
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
     .scroll-header {
         box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
         border-radius: 5px 5px 0px 0px;
@@ -168,9 +185,7 @@ img {
     }
 }
 
-@media screen and (min-width: 768px){
-}
+@media screen and (min-width: 768px) {}
 
 /* For large devices */
-@media screen and (min-width: 1024px){
-}
+@media screen and (min-width: 1024px) {}
