@@ -11,7 +11,7 @@
     --text-lighter: #ccd6f6;
     /*--body-color: hsl(var(--hue-color), 60%, 99%);*/
     --body-color: #091428;
-
+    --card-color: #0e2657;
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
     ;
@@ -108,7 +108,7 @@ img {
 }
 
 .section_title {
-    font-size: var(--h3-font-size);
+    font-size: var(--small-font);
     font-weight: 500;
     color: var(--first-color);
     display: flex;
@@ -117,9 +117,10 @@ img {
 }
 
 .section_title>span {
-    font-size: var(--h2-font-size);
+    font-size: var(--large-font);
     color: var(--text-lighter);
     margin-left: 10px;
+    font-weight: 700;
 }
 
 .section_title::after {
