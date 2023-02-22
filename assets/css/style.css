@@ -89,7 +89,9 @@
     backdrop-filter: blur(10px);
     box-shadow: 0 10px 20px -10px #05071a;
 }
-
+#nav-link{
+    color: var(--first-color);
+}
 .nav_container{
     width: 93%;
     /* background-color: aqua; */
