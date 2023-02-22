@@ -81,10 +81,13 @@
     padding: 0.2rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     z-index: 100000;
     position: fixed;
     top: 0;
-    background-color: var(--body-color);
+    background-color: rgba(9, 20, 40, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 20px -10px #05071a;
 }
 .nav_container{
     width: 93%;
@@ -110,6 +113,9 @@
 .navigation_box>ul{
     display: flex;
     list-style-type: none;
+    align-items: center;
+    margin-bottom: 0;
+    margin-right: 10px;
 }
 .navigation_box>ul>li{
     padding-left: 18px;
@@ -273,16 +279,17 @@ align-items: center;
 }
 .about_img_container{
     width: 70%;
-    height: 60%;
-    aspect-ratio: 1/1;
+    height: 55%;
+    /* aspect-ratio: 1/1; */
     overflow: hidden;
-    margin-top: 90px;
+    margin-top: 80px;
     border-radius: 4px;
     transition: ease-in-out 0.25s;
 }
 .about_img_container>img{
-    transform: translateY(-28px);
-    /* transform: scale(1); */
+    transform: scale(1.2) translateY(-10px);
+    aspect-ratio: 3/5;
+    object-fit: contain;
 }
 .about_img_container:hover{
     transform: translate(-3px, -5px);
@@ -416,7 +423,58 @@ z-index: 100;
 }
 
 /*! -------------|Skills section|----------- */
+#skills{
+    margin-bottom: 100vh;
+}
 #skills>.section_title::after{
     width: 50%;
     flex: 0.48
+}
+.frontend-skills{
+    width: 100%;
+}
+.frontend-skills>h1, .backend-skills>h1{
+    font-size: var(--large-font);
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+.fs_container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2rem;
+    margin-bottom: 40px;
+}
+.bs_container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2rem;
+    margin-bottom: 40px;
+}
+.skills-card{
+    padding: 12px;
+    border: 2px solid var(--first-color);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.25s;
+}
+.skills-card:hover{
+    background: rgb(100, 255, 218,0.05);
+    transform: translate(-2px,-5px);
+}
+.skills-card:hover span{
+    color: var(--first-color);
+}
+.skills-card>img{
+    width: 50%;
+    height: 50%;
+}
+.skills-card>span{
+    height: 20%;
+    margin-top: 15px;
+    color: var(--text-lighter);
+    font-weight: 700;
+    font-size: var(--medium-font);
 }
