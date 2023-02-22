@@ -424,7 +424,7 @@ z-index: 100;
 
 /*! -------------|Skills section|----------- */
 #skills{
-    margin-bottom: 100vh;
+    /* margin-bottom: 100vh; */
 }
 #skills>.section_title::after{
     width: 50%;
@@ -477,4 +477,30 @@ z-index: 100;
     color: var(--text-lighter);
     font-weight: 700;
     font-size: var(--medium-font);
+}
+
+/*! -------------|Github section|----------- */
+.section__title{
+    color: var(--text-lighter);
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.carousel-indicators{
+    top: 100%;
+    margin-top: 20px;
+}
+.github_carousel_container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+.github-carousel-window{
+    width: 70%;
+}
+
+/*! -------------|Github section|----------- */
+#contact>.section_title::after{
+    flex: 0.5;
+    /* width: 50%; */
 }
