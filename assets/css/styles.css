@@ -3,7 +3,8 @@
 
 /*!==================== VARIABLES CSS ====================*/
 :root {
-    --header-height: 1.5rem;
+    --header-height: 5rem;
+
     --first-color: #64ffda;
     --first-color-alt: hsl(166, 100%, 40%);
     --text: #8892b0;
@@ -78,7 +79,7 @@ html {
 }
 
 body {
-    /* margin: 0 0 var(--header-height) 0; */
+    /* margin-top: var(--header-height); */
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
@@ -104,7 +105,7 @@ img {
 
 /*!==================== REUSABLE CSS CLASSES ====================*/
 .section {
-    padding: 2rem 0 4rem;
+    /* height: calc(100vh - 5rem); */
 }
 
 .section_title {
@@ -114,6 +115,7 @@ img {
     display: flex;
     align-items: center;
     margin: 10px 0 40px;
+    margin-top: var(--header-height);
 }
 
 .section_title>span {
@@ -126,7 +128,8 @@ img {
 .section_title::after {
     content: "";
     /* display: block; */
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    flex: 0.5;
     height: 0.1px;
     margin-left: 30px;
     background-color: var(--text);
