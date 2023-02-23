@@ -203,4 +203,7 @@
     margin: 20px;
   } */
 
-  
+  .text-muted {
+    --bs-text-opacity: 1;
+    color: var(--text-light)!important;
+}

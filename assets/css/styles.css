@@ -115,11 +115,12 @@ img {
     display: flex;
     align-items: center;
     margin: 10px 0 40px;
-    margin-top: var(--header-height);
+    /* margin-top: var(--header-height); */
 }
 
 .section_title>span {
     font-size: var(--large-font);
+    font-size: clamp(26px,5vw,var(--large-font));
     color: var(--text-lighter);
     margin-left: 10px;
     font-weight: 700;
