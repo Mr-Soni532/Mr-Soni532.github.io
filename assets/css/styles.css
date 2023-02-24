@@ -19,7 +19,7 @@
 
     /* 1.5rem = 24px, 1.25rem = 20px, 1.125rem = 18px, 0.75rem = 12px ... */
     --ultra-big-font: 5rem;
-    --ultra-medium-font: 3.75rem;
+    --ultra-medium-font: 3rem;
     --large-font: 1.5rem;
     --medium-font: 1.25rem;
     --small-font: 1.125rem;
@@ -53,19 +53,6 @@
     --z-modal: 1000;
 }
 
-/* Font size for large devices */
-@media screen and (min-width: 1024px) {
-    :root {
-        --big-font-size: 3rem;
-        --h1-font-size: 2.25rem;
-        --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
-        --small-font-size: .875rem;
-        --smaller-font-size: .813rem;
-    }
-}
-
 
 /*!==================== BASE ====================*/
 * {
@@ -92,7 +79,10 @@ h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
 }
-
+p{
+    text-align: left;
+    word-spacing: normal;
+}
 a {
     text-decoration: none;
     transition: ease-in-out 0.25s;
@@ -104,9 +94,6 @@ img {
 }
 
 /*!==================== REUSABLE CSS CLASSES ====================*/
-.section {
-    /* height: calc(100vh - 5rem); */
-}
 
 .section_title {
     font-size: var(--small-font);
@@ -171,26 +158,4 @@ img {
 }
 
 
-/*!==================== MEDIA QUERY ====================*/
 
-/* For small devices */
-@media screen and (max-width: 568px) {}
-
-@media screen and (max-width: 350px) {}
-
-/* For medium devices */
-@media screen and (min-width: 568px) {}
-
-@media screen and (max-width: 767px) {
-    .scroll-header {
-        box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
-        border-radius: 5px 5px 0px 0px;
-        height: 35px;
-        align-content: center;
-    }
-}
-
-@media screen and (min-width: 768px) {}
-
-/* For large devices */
-@media screen and (min-width: 1024px) {}
