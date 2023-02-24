@@ -3,16 +3,14 @@
 
 
 /* for extra large screens */
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
     :root {
-        --body-color: white;
     }
-}
+} */
 
 /* for Desktop, laptops */
 @media screen and (max-width: 1200px) {
     :root {
-        --body-color: pink;
     }
 
     .main_pannel {
@@ -45,7 +43,6 @@
 /* for small screen, laptops */
 @media screen and (max-width: 1040px) {
     :root {
-        --body-color: #fff;
     }
 
     .project-description {
@@ -86,16 +83,22 @@
     .contrib-column {
         font-size: 12px;
     }
-
+    
     .contrib-number {
         font-size: 15px;
+    }
+    /* ------------- github Section ----------- */
+    .contact-info-container {
+       
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+       
     }
 }
 
 /* for small screen, laptops */
 @media screen and (max-width: 820px) {
     :root {
-        --body-color: red;
     }
 
     .project-description {
@@ -107,9 +110,12 @@
 /* For medium devices - iPads, Tablets */
 @media screen and (max-width: 768px) {
     :root {
-        --body-color: purple;
     }
+ 
     /* ------------- padding ----------- */
+    .main_pannel{
+        width: 90%;
+    }
     .home.section{
 
     }
@@ -253,7 +259,7 @@
         height: 200px;
     }
     /* ------------- Contact Section ----------- */
-    .contact_container_pc {
+    .contact-info-container{
         display: none;
     }
 
@@ -261,7 +267,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        flex: 80%;
+        flex: 1;
         justify-content: center;
     }
 
@@ -324,7 +330,6 @@
 /* For Mobile */
 @media screen and (max-width: 480px) {
     :root {
-        --body-color: greenYellow;
     }
       /* ------------- Home Section ----------- */
       .home_container>h3+h1 {
@@ -343,6 +348,5 @@
 
 @media screen and (max-width: 320px) {
     :root {
-        --body-color: skyblue;
     }
 }

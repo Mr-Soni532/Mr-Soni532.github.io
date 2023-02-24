@@ -628,17 +628,13 @@
     /* width: 50%; */
 }
 
-.contact_layout_containe {
+.contact_layout_container {
+    flex: 80%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-.contact_layout_container {
-    /* width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around; */
-}
 
 .contact-info-container>span {
     color: var(--text-lighter);
