@@ -84,6 +84,7 @@
 
 /* !=================|Navigation Pannel|============= */
 .navigation {
+    position: relative;
     width: 100%;
     height: var(--header-height);
     padding: 0.2rem;
@@ -95,7 +96,6 @@
     top: 0;
     background-color: rgba(9, 20, 40, 0.85);
     backdrop-filter: blur(10px);
-    box-shadow: 0 10px 20px -10px #05071a;
 }
 
 #nav-link {
@@ -105,7 +105,7 @@
 .nav_container {
     width: 93%;
     /* background-color: aqua; */
-    /* height: 10px; */
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -113,15 +113,19 @@
 }
 
 .nav_logo {
-    /* color: var(--first-color);
-    border: 3px solid var(--first-color);
-    padding: 10px 18px;
-    font-size: var(1.25rem);
-    font-weight: 900;
-    border-radius: 50%; */
-    width: 3.5%;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav_logo>img{
+    width: auto;
+    height: 70%;
 }
 
+#menuToggle{
+    display: none;
+}
 .navigation_box {
     display: flex;
     align-items: center;
@@ -159,6 +163,8 @@
     font-size: var(--smaller-font);
     font-weight: 600;
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 7px 10px;
     border-radius: 4px;
     letter-spacing: 0.5px;
@@ -171,7 +177,9 @@
     background: var(--first-color);
     color: var(--body-color);
 }
-
+.nav-link:focus{
+    color: var(--first-color);
+}
 /* !=================|Main Pannel|============= */
 .main_pannel {
     width: 70%;
@@ -414,7 +422,7 @@
 }
 
 .project-card_description_section {
-    width: 50%;
+    width: 47%;
     position: absolute;
     height: 100%;
     top: 0;
@@ -479,7 +487,9 @@
 .project-description>p {
     margin-bottom: 0;
 }
-
+.project-description>p+p>span{
+    display: none;
+}
 .project-tech-stack {
     /* width: 100%; */
     display: flex;
@@ -614,7 +624,11 @@
     display: flex;
     align-items: center;
     width: 70%;
+    object-fit: contain;
 }
+.github-carousel-window>div>img{
+
+} 
 
 /*! -------------|Contact|----------- */
 #contact {
@@ -757,7 +771,7 @@
     right: 6rem;
     bottom: -20%;
     background-color: var(--first-color);
-    opacity: .8;
+    opacity: 1;
     padding: 0 .3rem;
     border-radius: .4rem;
     z-index: var(--z-tooltip);
@@ -793,3 +807,26 @@
     border-radius: .3rem;
 }
 
+/*! ================== Addons =============== */
+.project-description{
+    flex-direction: column;
+}
+.project-description>p{
+    text-align: right;
+}
+.project-description>p:last-child{
+    color: var(--first-color);
+    font-weight: 100;
+    font-size: 14px;
+    margin-top: 10px;
+}
+#project-card-flip p{
+    text-align: left;
+}
+.project-tech-stack{
+    max-width: 90%;
+}
+.scroll-header{
+    box-shadow: 0 10px 20px -10px #05071a;
+
+}
