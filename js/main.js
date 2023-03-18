@@ -60,3 +60,12 @@ function transform_hamburger(){
     second.classList.toggle('second_span_active')
     third.classList.toggle('third_span_active')
 }
+
+//! ============= resume button ==========
+document.getElementById("resume-button-1").onclick = () => {
+    window.open("https://drive.google.com/file/d/1ipnSEzLMHm--KlKIRtS8spRTOhYPy3fG/view?usp=share_link");
+}
+
+document.getElementById("resume-button-2").onclick = () => {
+    window.open("https://drive.google.com/file/d/1ipnSEzLMHm--KlKIRtS8spRTOhYPy3fG/view?usp=share_link");
+}
