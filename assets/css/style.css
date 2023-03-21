@@ -159,22 +159,29 @@
     letter-spacing: 0.8px;
 }
 
-.navigation_box>a {
+.navigation_box>button {
     font-size: var(--smaller-font);
-    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 7px 10px;
     border-radius: 4px;
-    letter-spacing: 0.5px;
     margin-left: 18px;
     border: 1px solid var(--first-color);
-    color: var(--first-color);
+    background: var(--body-color);
+    transition: 0.25s ease-in-out;
 }
+.navigation_box>button>a{
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--first-color);
+    transition: 0.25s ease-in-out;
 
-.navigation_box>a:hover {
+}
+.navigation_box>button:hover {
     background: var(--first-color);
+}
+.navigation_box>button:hover a{
     color: var(--body-color);
 }
 .nav-link:focus{
@@ -366,24 +373,28 @@
 
 #resume-button-2 {
     border: 1px solid var(--first-color);
-    color: var(--first-color);
-    padding: 15px 40px;
     border-radius: 4px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    width: fit-content;
+    background: var(--body-color);
+    transition: 0.25s ease-in-out;
+    padding: 15px 40px;
+}
+#resume-button-2>a{
+    color: var(--first-color);
     font-size: var(--medium-font);
+    transition: 0.25s ease-in-out;
 }
 
-#resume-button-2>i {
+#resume-button-2>a>i {
     margin-left: 10px;
 }
 
 #resume-button-2:hover {
     background: var(--first-color);
+}
+
+#resume-button-2:hover a{
     color: var(--body-color);
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 /*! -------------|Project section|----------- */

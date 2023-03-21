@@ -62,10 +62,15 @@ function transform_hamburger(){
 }
 
 //! ============= resume button ==========
-document.getElementById("resume-button-1").onclick = () => {
-    window.open("https://drive.google.com/file/d/1ipnSEzLMHm--KlKIRtS8spRTOhYPy3fG/view?usp=share_link");
-}
+document.getElementById("resume-link-1").onclick = () => {
 
-document.getElementById("resume-button-2").onclick = () => {
-    window.open("https://drive.google.com/file/d/1ipnSEzLMHm--KlKIRtS8spRTOhYPy3fG/view?usp=share_link");
+    location.assign("https://drive.google.com/file/d/1ipnSEzLMHm--KlKIRtS8spRTOhYPy3fG/view?usp=share_link");
 }
+document.getElementById("resume-link-2").onclick = () => {
+
+    location.assign("https://drive.google.com/file/d/1ipnSEzLMHm--KlKIRtS8spRTOhYPy3fG/view?usp=share_link");
+}
+// document.getElementById("resume-link-1").onclick = () => {
+
+//     location.assign("https://drive.google.com/file/d/1ipnSEzLMHm--KlKIRtS8spRTOhYPy3fG/view?usp=share_link");
+// }
