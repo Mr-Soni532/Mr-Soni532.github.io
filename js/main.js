@@ -75,6 +75,10 @@ document.getElementById("resume-link-1").onclick = () => {
 //     location.assign("https://drive.google.com/file/d/1ipnSEzLMHm--KlKIRtS8spRTOhYPy3fG/view?usp=share_link");
 // }
 
+//! ================= Fixture =================
+    window.addEventListener('load',()=>{
+        window.scrollTo(0, 0);
+    })
 //! ================= SCROLL REVEAL JS =================
 ScrollReveal({
     reset: false,
