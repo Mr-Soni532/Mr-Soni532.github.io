@@ -77,7 +77,8 @@ document.getElementById("resume-link-1").onclick = () => {
 
 //! ================= Fixture =================
     window.addEventListener('load',()=>{
-        window.scrollTo(0, 0);
+        // window.scrollTo(0, 0);
+        window.location.href = '#home'
     })
 //! ================= SCROLL REVEAL JS =================
 ScrollReveal({
