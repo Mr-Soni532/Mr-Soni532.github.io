@@ -168,7 +168,7 @@
     border-radius: 4px;
     margin-left: 18px;
     border: 1px solid var(--first-color);
-    background: var(--body-color);
+    /* background: var(--body-color); */
     transition: 0.25s ease-in-out;
 }
 .navigation_box>button>a{
@@ -374,7 +374,7 @@
 #resume-button-2 {
     border: 1px solid var(--first-color);
     border-radius: 4px;
-    background: var(--body-color);
+    /* background: var(--body-color); */
     transition: 0.25s ease-in-out;
     padding: 15px 40px;
 }
@@ -839,5 +839,54 @@
 }
 .scroll-header{
     box-shadow: 0 10px 20px -10px #05071a;
-
+    
+}
+/*! ================== Shining Animation =============== */
+/* .shine{
+    padding: 12px 40px;
+    color: #fff;
+    background: linear-gradient(to right,#4d4d4d 0, #fff 10%, #4d4d4d 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear forwards;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+} */
+.shine{
+    background: linear-gradient(to right,#64ffda 0, #fff 30%, #64ffda 30%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine1 3s infinite linear forwards;
+}
+.shine2{
+    background: linear-gradient(to right,#64ffda 0, #fff 10%, #64ffda 30%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine2 3s infinite linear forwards;
+}
+@keyframes shine1{
+    0%{
+        background-position: 0px;
+    }
+    50%{
+        background-position: 70px;
+    }
+    100%{
+        background-position: 130px;
+    }
+}
+@keyframes shine2{
+    0%{
+        background-position: 0px;
+    }
+    50%{
+        background-position: 80px;
+    }
+    100%{
+        background-position: 190px;
+    }
 }
