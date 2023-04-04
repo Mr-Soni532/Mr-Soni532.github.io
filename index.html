@@ -718,7 +718,12 @@
     <!-- !--==================== SCROLL TOP ====================-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init()
+        AOS.init({
+            disable: 'mobile',
+            duration: 400,
+            once:false
+        });
     </script>
     <!-- !--==================== SCROLL TOP ====================-->
     <a href="#" class="scrollup" id="scroll-up">
