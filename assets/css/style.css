@@ -149,6 +149,7 @@
 .navigation_box>ul>li:hover a {
     color: var(--first-color);
     transition: ease-in-out 0.25s;
+    /* transform: translateY(100px); */
 }
 
 .navigation_box>ul>li>a {
@@ -867,6 +868,9 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: shine2 3s infinite linear forwards;
+}
+.shine2:hover, .shine:hover{
+    -webkit-text-fill-color: var(--body-color);
 }
 @keyframes shine1{
     0%{

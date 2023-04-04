@@ -15,6 +15,9 @@
     <!--!================= github stats =================------->
     <link rel="stylesheet" href="assets/css/github_states.css">
 
+    <!--!================= AOS CSS =================------->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!--!================= main =================------->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media_queries.css">
@@ -26,8 +29,8 @@
 
 <body>
     <!--!================= Header =================------->
-    <section id="nav-menu" class="navigation">
-        <div class="nav_container " >
+    <section id="nav-menu" data-aos="fade-down" class="navigation">
+        <div class="nav_container ">
             <div class="nav_logo"><img src="./assets/img/logo/Neutral Elegant Calligraphy Initial B  Letter Logo.png"
                     alt=""></div>
             <!-- Menu toggle icon for small device -->
@@ -45,14 +48,15 @@
                     <li class="nav-link skills" id="nav-link">04. <a href="#skills">Skills</a> </li>
                     <li class="nav-link contact" id="nav-link">05. <a href="#contact">Contact</a> </li>
                 </ul>
-                <button id="resume-button-1" class="nav_link_resume shine"><a href="./assets/pdf/Bhupender_Soni_Resume.pdf" class="nav-link resume"
-                    id="resume-link-1" download="Bhupender_Soni_Resume.pdf">RESUME</a></button>
+                <button id="resume-button-1" class="nav_link_resume shine"><a
+                        href="./assets/pdf/Bhupender_Soni_Resume.pdf" class="nav-link resume"
+                        id="resume-link-1" download="Bhupender_Soni_Resume.pdf">RESUME</a></button>
             </div>
         </div>
     </section>
 
     <!--!================= left Section =================------->
-    <div class="left_pannel">
+    <div class="left_pannel" data-aos="fade-right">
 
         <div class="icon_container">
             <!-- github -->
@@ -105,7 +109,7 @@
     </div>
 
     <!--!================= Right Section =================------->
-    <div class="right_pannel">
+    <div class="right_pannel" data-aos="fade-left">
         <div class="email_container">
             <a href="mailto:official.soni532@gmail.com" id="contact-email">official.soni532@gmail.com</a>
         </div>
@@ -117,13 +121,13 @@
         <!--!================= Home Section =================------->
         <section id="home" class="home section">
             <div class="home_container">
-                <h3 class="home_container_intro">Hi, my name is</h3>
-                <h1 id="user-detail-name" class="home_container_intro_name">Bhupender Soni</h1>
-                <h1>Full Stack Web Developer</h1>
-                <p id="user-detail-intro">Highly skilled backend developer adept at contributing to a highly
+                <h3 class="home_container_intro" data-aos="fade-right">Hi, my name is</h3>
+                <h1 id="user-detail-name" data-aos="fade-up" class="home_container_intro_name">Bhupender Soni</h1>
+                <h1 data-aos="zoom-in">Full Stack Web Developer</h1>
+                <p id="user-detail-intro" data-aos="fade-down">Highly skilled backend developer adept at contributing to a highly
                     collaborative work environment. Designed and developed web applications across multiple APIs,
                     third-party integrations and databases.</p>
-                <a href="#contact" >Contact Me<i class="fa-regular fa-message"></i></a>
+                <a href="#contact" data-aos="zoom-in-down">Contact Me<i class="fa-regular fa-message"></i></a>
             </div>
         </section>
 
@@ -132,7 +136,7 @@
             <div class="section_title">
                 02. <span>About Me</span>
             </div>
-            <div class="about_container">
+            <div class="about_container"data-aos="fade-right">
                 <div class="about_left">
                     <p id="user-detail-intro" style="display:none;">
                         "
@@ -160,12 +164,12 @@
                             <span class="stats_title">Projects</span>
                         </div>
                     </div>
-                    <button id="resume-button-2" class="shine2">
+                    <button id="resume-button-2" class="shine2" data-aos="zoom-in-down">
                         <a download="" href="assets/pdf/Bhupender_Soni_Resume.pdf"
-                        id="resume-link-2">Download CV<i class="fa-solid fa-download"></i></a>
+                            id="resume-link-2" >Download CV<i class="fa-solid fa-download"></i></a>
                     </button>
                 </div>
-                <div class="about_right">
+                <div class="about_right" data-aos="zoom-in-left">
                     <div class="about_img_container" class="home-img">
                         <img src="./assets/img/bhupender-removebg_1-1.png" alt="" class="home-img">
                     </div>
@@ -180,9 +184,9 @@
                 03. <span>My Projects</span>
             </div>
             <!--! -------------- Gator project card -------------- -->
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-up">
                 <!-- ------ project Image -------- -->
-                <div class="project-card_img_section">
+                <div class="project-card_img_section" data-aos="fade-right">
                     <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
                         data-bs-interval="3000">
                         <div class="carousel-inner">
@@ -204,7 +208,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card_description_section">
+                <div class="project-card_description_section" data-aos="fade-left">
                     <h4>Clone Project</h4>
                     <h2 class="project-title">Gator</h2>
                     <div class="project-description">
@@ -249,8 +253,8 @@
             </div>
 
             <!--! -------------- Digital Basket project card (Flip)-------------- -->
-            <div class="project-card" id="project-card-flip">
-                <div class="project-card_description_section" id="project-flip-description">
+            <div class="project-card" id="project-card-flip" data-aos="fade-up">
+                <div class="project-card_description_section" id="project-flip-description" data-aos="fade-right">
                     <h4>Clone Project</h4>
                     <h2 class="project-title">Digital Basket</h2>
                     <div class="project-description">
@@ -290,7 +294,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="project-card_img_section" id="project-flip-img">
+                <div class="project-card_img_section" id="project-flip-img" data-aos="fade-left">
                     <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
                         data-bs-interval="3000">
                         <div class="carousel-inner">
@@ -314,9 +318,9 @@
             </div>
 
             <!--! -------------- Roberto project card -------------- -->
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-up">
                 <!-- ------ project Image -------- -->
-                <div class="project-card_img_section">
+                <div class="project-card_img_section" data-aos="fade-right">
                     <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
                         data-bs-interval="3000">
                         <div class="carousel-inner">
@@ -338,7 +342,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card_description_section">
+                <div class="project-card_description_section" data-aos="fade-left">
                     <h4>Clone Project</h4>
                     <h2 class="project-title">Roberto</h2>
                     <div class="project-description">
@@ -380,8 +384,8 @@
             </div>
 
             <!--! -------------- mysecretnotes project card (Flip)-------------- -->
-            <div class="project-card project-card-last" id="project-card-flip">
-                <div class="project-card_description_section" id="project-flip-description">
+            <div class="project-card project-card-last" id="project-card-flip" data-aos="fade-up">
+                <div class="project-card_description_section" id="project-flip-description" data-aos="fade-right">
                     <h4>Personal Project</h4>
                     <h2 class="project-title">MySecretNotes</h2>
                     <div class="project-description">
@@ -423,7 +427,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="project-card_img_section" id="project-flip-img">
+                <div class="project-card_img_section" id="project-flip-img" data-aos="fade-left">
                     <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel"
                         data-bs-interval="3000">
                         <div class="carousel-inner">
@@ -449,7 +453,7 @@
         </section>
 
         <!--!================= Skills Section =================------->
-        <section id="skills" class="skills section">
+        <section id="skills" class="skills section" data-aos="fade-up">
             <!-- section heading -->
             <div class="section_title">
                 04. <span>Skills</span>
@@ -458,59 +462,69 @@
                 <div class="frontend-skills">
                     <h1>Tech Stacks</h1>
                     <div class="fs_container">
-                        <div class="skills-card">
+                        <div class="skills-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                             <div class="skills-card-img" style="display: none;"></div>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
                                 class="skills-card-img" alt="html5">
                             <span class="skills-card-name">HTML5</span>
                         </div>
-                        <div class="skills-card">
+                        <div class="skills-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                             <div class="skills-card-img" style="display: none;"></div>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
                                 class="skills-card-img" alt="css3">
                             <span class="skills-card-name">CSS3</span>
                         </div>
-                        <div class="skills-card">
+                        <div class="skills-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                             <div class="skills-card-img" style="display: none;"></div>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                                 class="skills-card-img" alt="JavaScript">
                             <span class="skills-card-name">JavaScript</span>
                         </div>
-                        <div class="skills-card">
+                        <div class="skills-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                             <div class="skills-card-img" style="display: none;"></div>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
                                 class="skills-card-img" alt="express">
                             <span class="skills-card-name">Express.js</span>
                         </div>
-                        <div class="skills-card">
+                        <div class="skills-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                             <div class="skills-card-img" style="display: none;"></div>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
                                 class="skills-card-img" alt="nodejs">
                             <span class="skills-card-name">Node.js</span>
                         </div>
-                        <div class="skills-card">
+                        <div class="skills-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                             <div class="skills-card-img" style="display: none;"></div>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
                                 class="skills-card-img" alt="mongodb">
                             <span class="skills-card-name">MongoDB</span>
                         </div>
-                        <div class="skills-card">
+                        <div class="skills-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                             <div class="skills-card-img" style="display: none;"></div>
                             <img src="./assets/img/icon/sql.png" class="skills-card-img" alt="sql">
                             <span class="skills-card-name">SQL</span>
                         </div>
-                        <div class="skills-card">
+                        <div class="skills-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                             <div class="skills-card-img" style="display: none;"></div>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                                 class="skills-card-img" alt="react">
                             <span class="skills-card-name">React</span>
                         </div>
-                        <div class="skills-card">
+                        <div class="skills-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                             <div class="skills-card-img" style="display: none;"></div>
                             <img src="./assets/img/icon/aws.png" class="skills-card-img" alt="JavaScript">
                             <span class="skills-card-name">AWS</span>
                         </div>
-                        <div class="skills-card">
+                        <div class="skills-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                             <div class="skills-card-img" style="display: none;"></div>
                             <img src="./assets/img/icon/yml.png" class="skills-card-img" alt="JavaScript">
                             <span class="skills-card-name">YML</span>
@@ -520,58 +534,68 @@
                 <div class="backend-skills">
                     <h1>Tools & Libraries</h1>
                     <div class="bs_container">
-                        <div class="skills-card">
+                        <div class="skills-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                             <div class="skills-card-img" style="display: none;"></div>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
                                 class="skills-card-img" alt="vscode">
                             <span class="skills-card-name">VS Code</span>
                         </div>
-                        <div class="skills-card">
+                        <div class="skills-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                             <div class="skills-card-img" style="display: none;"></div>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"
                                 class="skills-card-img" alt="materialui">
                             <span class="skills-card-name">Material UI</span>
                         </div>
-                        <div class="skills-card">
+                        <div class="skills-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                             <div class="skills-card-img" style="display: none;"></div>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
                                 class="skills-card-img" alt="bootstrap">
                             <span class="skills-card-name">Bootstrap</span>
                         </div>
-                        <div class="skills-card">
+                        <div class="skills-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                             <div class="skills-card-img" style="display: none;"></div>
                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
                                 class="skills-card-img" alt="git">
                             <span class="skills-card-name">Git</span>
                         </div>
-                        <div class="skills-card">
+                        <div class="skills-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                             <div class="skills-card-img" style="display: none;"></div>
                             <img src="https://www.svgrepo.com/show/217753/github.svg" class="skills-card-img"
                                 alt="github">
                             <span class="skills-card-name">Github</span>
                         </div>
-                        <div class="skills-card">
+                        <div class="skills-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                             <div class="skills-card-img" style="display: none;"></div>
                             <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/npm_original_wordmark_logo_icon_146402.png"
                                 class="skills-card-img" alt="github">
                             <span class="skills-card-name">NPM</span>
                         </div>
-                        <div class="skills-card">
+                        <div class="skills-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                             <div class="skills-card-img" style="display: none;"></div>
                             <img src="./assets/img/icon/draw-io.svg" class="skills-card-img" alt="github">
                             <span class="skills-card-name">Draw.io</span>
                         </div>
-                        <div class="skills-card">
+                        <div class="skills-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                             <div class="skills-card-img" style="display: none;"></div>
                             <img src="./assets/img/icon/netlify.png">
                             <span class="skills-card-name">Netlify</span>
                         </div>
-                        <div class="skills-card">
+                        <div class="skills-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                             <div class="skills-card-img" style="display: none;"></div>
                             <img src="./assets/img/icon/heroku.png">
                             <span class="skills-card-name">Heroku</span>
                         </div>
-                        <div class="skills-card">
+                        <div class="skills-card" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                             <div class="skills-card-img" style="display: none;"></div>
                             <img src="./assets/img/icon/canva.png">
                             <span class="skills-card-name">Canva</span>
@@ -582,7 +606,7 @@
         </section>
 
         <!--!================= Github Stats =================------->
-        <section class="about react-activity-calendar" id="github">
+        <section class="about react-activity-calendar" id="github" data-aos="fade-up">
             <h2 class="section__title">Github contributions in the last year</h2>
             <div class="Github-calendar ">
                 <!-- Loading stuff -->
@@ -590,7 +614,7 @@
         </section>
 
         <!--!================= Github Stats =================------->
-        <section class="portfolio section githubstates " id="githubstates">
+        <section class="portfolio section githubstates " id="githubstates" data-aos="fade-up">
             <h2 class="section__title">GitHub Activities</h2>
             <div id="carouselExampleIndicators" class="carousel slide github_carousel_container carousel-fade"
                 data-bs-ride="carousel"
@@ -632,36 +656,37 @@
         </section>
 
         <!--!================= Contact =================------->
-        <section id="contact">
+        <section id="contact" data-aos="fade-up">
             <div class="section_title">
                 05. <span>Contact</span>
             </div>
             <!-- ----- for mobile screen ---- -->
             <!-- ----- for desktop screen ---- -->
             <div class="contact_layout_container">
-                <div class="contact-mobile-active">
+                <div class="contact-mobile-active" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
                     <span>Get in Touch </span>
                     <p>I'm looking for new opportunities, my inbox is always open. Whether you have a question or just
                         want to say hi, I’ll be so happy to connect with you!</p>
                     <a href="mailto:official.soni532@gmail.com" id="contact-email">Say Hello</a>
                 </div>
-                <div class="contact-info-container">
-                    <a href="tel:+918306969532" class="contact-info-card">
+                <div class="contact-info-container" data-aos="fade-zoom-in">
+                    <a href="tel:+918306969532" class="contact-info-card" data-aos="fade-right">
                         <img src="./assets/img/icon/phone-call.svg" alt="">
                         <span> Call Me</span>
                         <span> +91 83069-69532</span>
                     </a>
-                    <a href="mailto:official.soni532@gmail.com" class="contact-info-card">
+                    <a href="mailto:official.soni532@gmail.com" class="contact-info-card" data-aos="fade-right">
                         <img src="./assets/img/icon/mail.svg" alt="">
                         <span>Write Me</span>
                         <span>official.soni532@gmail.com</span>
                     </a>
-                    <a href="https://github.com/Mr-Soni532" class="contact-info-card">
+                    <a href="https://github.com/Mr-Soni532" class="contact-info-card" data-aos="fade-left">
                         <img src="./assets/img/icon/github.svg" alt="">
                         <span>Checkout</span>
                         <span>Mr-Soni532</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/bhupender-soni/" class="contact-info-card">
+                    <a href="https://www.linkedin.com/in/bhupender-soni/" class="contact-info-card" data-aos="fade-left">
                         <img src="./assets/img/icon/linkedin.svg" alt="">
                         <span>Ping Me</span>
                         <span>bhupender-soni</span>
@@ -672,11 +697,16 @@
             <div class="footer-section">
                 <div class="mobile_footer_icons">
                     <div>
-                        <a target="_blank" href="https://github.com/Mr-Soni532"><img src="./assets/img/icon/github.svg" alt=""></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/bhupender-soni/"><img src="./assets/img/icon/linkedin.svg" alt=""></a>
-                        <a target="_blank" href="tel:+918306969532"><img src="./assets/img/icon/phone-call.svg" alt=""></a>
-                        <a target="_blank" href="https://twitter.com/bhupender_sonii"><img src="./assets/img/icon/twitter.svg" alt=""></a>
-                        <a target="_blank" href="mailto:official.soni532@gmail.com"><img src="./assets/img/icon/mail.svg" alt=""></a>
+                        <a target="_blank" href="https://github.com/Mr-Soni532"><img src="./assets/img/icon/github.svg"
+                                alt=""></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/bhupender-soni/"><img
+                                src="./assets/img/icon/linkedin.svg" alt=""></a>
+                        <a target="_blank" href="tel:+918306969532"><img src="./assets/img/icon/phone-call.svg"
+                                alt=""></a>
+                        <a target="_blank" href="https://twitter.com/bhupender_sonii"><img
+                                src="./assets/img/icon/twitter.svg" alt=""></a>
+                        <a target="_blank" href="mailto:official.soni532@gmail.com"><img
+                                src="./assets/img/icon/mail.svg" alt=""></a>
                     </div>
                 </div>
                 <p>Designed & Built by <a href="https://github.com/Mr-Soni532">Bhupender Soni</a></p>
@@ -685,6 +715,11 @@
         </section>
 
     </section>
+    <!-- !--==================== SCROLL TOP ====================-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- !--==================== SCROLL TOP ====================-->
     <a href="#" class="scrollup" id="scroll-up">
         <i class="fa-solid fa-arrow-up scrollup__icon"></i>
@@ -702,7 +737,7 @@
 <script>GitHubCalendar(".Github-calendar", "Mr-Soni532", { responsive: true });</script>
 
 <!--==================== SCROLL REVEAL JS ====================-->
-<script src="https://unpkg.com/scrollreveal"></script>
+
 
 <!--==================== Custome JS ====================-->
 <script src="./js/main.js"></script>
